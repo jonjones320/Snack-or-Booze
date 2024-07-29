@@ -17,7 +17,7 @@ class SnackOrBoozeApi {
   };
 
   static async makeSnack() {
-    const result = await axios.post(`${BASE_API_URL}/drinks`);
+    const result = await axios.post(`${BASE_API_URL}/snacks`);
     return result.data;
   };
 
