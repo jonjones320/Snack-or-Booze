@@ -1,6 +1,21 @@
 import React, { useState } from "react";
+import SnackOrBoozeApi from "./Api";
 
-const NewItemForm = ({ onFormSubmit }) => {
+
+
+async function onFormSubmit(formData) {
+  if (formData.type === "snacks") {
+    const snack = await SnackOrBoozeApi.makeSnack();
+    return snack;
+  } else {
+    const drink = await SnackOrBoozeApi.makeDrink();
+    return drink;
+  };
+};
+
+
+
+const NewItemForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     description: '', 
@@ -22,6 +37,7 @@ const NewItemForm = ({ onFormSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <br />
       <label htmlFor="name">Name</label>
       <input
         id="name"
@@ -61,6 +77,23 @@ const NewItemForm = ({ onFormSubmit }) => {
         value={formData.serve}
         onChange={handleChange}
       />
+      <br />
+      <fieldset name="type">
+        <label htmlFor="snack">Snack</label>
+        <input id="snack" 
+          type="radio" 
+          name="type" 
+          value={formData.snack} 
+          onChange={handleChange}
+        />
+        <label htmlFor="drink">Drink</label>
+        <input id="drink" 
+          type="radio" 
+          name="type" 
+          value={formData.drink} 
+          onChange={handleChange}
+        />
+      </fieldset>
       <br />
       <button>Create</button>
     </form>
