@@ -45,10 +45,10 @@ function App() {
               <Home snacks={snacks} drinks={drinks} />
             </Route>
             <Route exact path="/snacks">
-              <Menu snacks={snacks} title="Snacks" />
+              <Menu items={snacks} title="Snacks" />
             </Route>
             <Route exact path="/drinks">
-              <Menu snacks={drinks} title="Drinks" />
+              <Menu items={drinks} title="Drinks" />
             </Route>
             <Route path="/snacks/:id">
               <Snack items={snacks} cantFind="/snacks" />
