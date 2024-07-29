@@ -1,10 +1,8 @@
 # **Assessment: React 2 Snack or Booze**
 
 
-
 <aside>
-
-**Assessments**
+⚠ **Assessments**
 
 Remember, assessments are meant to be completed **by you**, not as a shared exercise with friends or other members of your cohort.
 
