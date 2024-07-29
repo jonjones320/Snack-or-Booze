@@ -1,9 +1,10 @@
 # **Assessment: React 2 Snack or Booze**
 
-[snack-or-booze-starter-code.zip](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/15e5afe2-b82f-4191-b23c-7a7e8850debe/snack-or-booze-starter-code.zip)
+
 
 <aside>
-⚠️ **Assessments**
+
+**Assessments**
 
 Remember, assessments are meant to be completed **by you**, not as a shared exercise with friends or other members of your cohort.
 
