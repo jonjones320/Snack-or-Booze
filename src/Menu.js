@@ -10,7 +10,7 @@ import {
   ListGroupItem
 } from "reactstrap";
 
-function Menu({ items }) {
+function Menu({ items, title }) {
   return (
     <section className="col-md-4">
       <Card>
@@ -24,7 +24,7 @@ function Menu({ items }) {
           </CardText>
           <ListGroup>
             {items.map(item => (
-              <Link to={`/${item}/${item.id}`} key={item.id}>
+              <Link to={`/${title}/${item.id}`} key={item.id}>
                 <ListGroupItem>{item.name}</ListGroupItem>
               </Link>
             ))}
