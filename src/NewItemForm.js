@@ -52,6 +52,16 @@ const NewItemForm = ({ onFormSubmit }) => {
         onChange={handleChange}
       />
       <br />
+      <label htmlFor="serve">Serve</label>
+      <input
+        id="serve"
+        type="text"
+        name="serve"
+        placeholder="How is it served?"
+        value={formData.serve}
+        onChange={handleChange}
+      />
+      <br />
       <button>Create</button>
     </form>
   );
