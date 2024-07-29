@@ -24,7 +24,7 @@ function Menu({ items, title }) {
           </CardText>
           <ListGroup>
             {items.map(item => (
-              <Link to={`/${title}/${item.id}`} key={item.id}>
+              <Link to={`/${title.toLowerCase()}/${item.id}`} key={item.id}>
                 <ListGroupItem>{item.name}</ListGroupItem>
               </Link>
             ))}
