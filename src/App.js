@@ -7,6 +7,7 @@ import NavBar from "./NavBar";
 import { Route, Switch } from "react-router-dom";
 import Menu from "./Menu";
 import Item from "./Item";
+import NewItemForm from "./NewItemForm";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +56,9 @@ function App() {
             </Route>
             <Route path="/drinks/:id">
               <Item items={drinks} cantFind="/drinks" />
+            </Route>
+            <Route path="/new">
+              <NewItemForm />
             </Route>
             <Route>
               <p>Hmmm. I can't seem to find what you want.</p>
