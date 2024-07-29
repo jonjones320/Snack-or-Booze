@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SnackOrBoozeApi from "./Api";
 
 
-
 async function onFormSubmit(formData) {
   if (formData.type === "snacks") {
     const snack = await SnackOrBoozeApi.makeSnack();
@@ -12,7 +11,6 @@ async function onFormSubmit(formData) {
     return drink;
   };
 };
-
 
 
 const NewItemForm = () => {
