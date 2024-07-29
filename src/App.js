@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     async function getDrinks() {
-      let drinks = await SnackOrBoozeApi.getSnacks();
+      let drinks = await SnackOrBoozeApi.getDrinks();
       setDrinks(drinks);
       setIsLoading(false);
     }
